@@ -1,0 +1,7 @@
+nav.header.navbar a {
+    color: #fff;
+    font-weight: 600;
+}
+nav.header .custom-nav:hover {
+    color: #5258fb;
+}

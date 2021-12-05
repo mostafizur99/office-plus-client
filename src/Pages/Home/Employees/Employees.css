@@ -1,0 +1,27 @@
+.employees-section{
+    padding: 5rem 0 10rem 0;
+}
+.employees-heading{
+    padding: 1rem 0;
+}
+.action-btn{
+    text-align: right;
+}
+.action-btn .btn-hide{
+    border: none;
+    background-color: #ffc107;
+    color: #fff;
+    font-size: .8rem;
+    font-weight: 600;
+    padding: .5rem 1rem;
+    text-transform: uppercase;
+}
+.action-btn .btn-show{
+    border: none;
+    background-color: #5258fb;
+    color: #fff;
+    font-size: .8rem;
+    font-weight: 600;
+    padding: .5rem 1rem;
+    text-transform: uppercase;
+}

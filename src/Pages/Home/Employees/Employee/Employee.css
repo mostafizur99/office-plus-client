@@ -1,0 +1,43 @@
+.employee{
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgba(0,0,0,.1);
+    padding: 3rem;
+    text-align: left;
+    transition: .3s;
+    margin-bottom: 2rem;
+}
+.employee:hover{
+    background-color: #5258fb;
+}
+
+.employee h4{
+color: #5258fb;
+font-size: 1.2rem;
+}
+.employee:hover h4{
+    color: #fff;
+}
+.employee h6{
+color: #434343;
+margin: 1rem 0;
+}
+.employee:hover h6{
+    color: #fff;
+}
+
+/* Tablet Device */
+@media only screen and (min-width: 688px) and (max-width:992px) {
+    .employee {
+        padding: .5rem;
+    }
+    .employee h4{
+        font-size: 1rem;
+        }
+}
+/* Mobile Device */
+@media only screen and (max-width:688px) {
+    .employee {
+        margin: 1rem .5rem;
+    }
+}
