@@ -6,7 +6,7 @@ const OfficePieChart = () => {
     const [employees, setEmployees] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/employees')
+        fetch('https://mighty-escarpment-69704.herokuapp.com/employees')
             .then(res => res.json())
             .then(data => setEmployees(data));
     }, []);

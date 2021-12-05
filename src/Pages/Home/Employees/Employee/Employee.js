@@ -4,7 +4,7 @@ import { Col } from 'react-bootstrap';
 import './Employee.css';
 
 const Employee = ({ employee }) => {
-    const { employee_name, email, employee_age, employee_salary, employee_duration, _id } = employee;
+    const { employee_name, email, employee_age, employee_salary, employee_duration } = employee;
 
     return (
         <Col xs={12} md={4}>

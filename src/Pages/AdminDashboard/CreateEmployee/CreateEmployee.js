@@ -19,7 +19,7 @@ const CreateEmployee = () => {
         const newEmployee = { employee_name, email, employee_age, employee_salary, employee_duration };
 
         // POST employee data 
-        fetch('http://localhost:5000/employees', {
+        fetch('https://mighty-escarpment-69704.herokuapp.com/employees', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -31,10 +31,12 @@ const CreateEmployee = () => {
                 console.log(data);
                 if (data.insertedId) {
                     alert('Successfully added the Employee.')
+                    e.target.reset();
+
                 }
-            })
+            });
+
         e.preventDefault();
-        e.target.reset();
     }
 
 
@@ -70,7 +72,7 @@ const CreateEmployee = () => {
                                 </div>
                                 <div className="mb-2">
                                     <label htmlFor="duration">Working duration(month)</label>
-                                    <input ref={salaryRef} type="number" className="form-control" name="duration" id="duration" />
+                                    <input ref={durationRef} type="number" className="form-control" name="duration" id="duration" />
                                 </div>
                                 <div className="mb-2">
                                     <input className="btn-update" type="submit" value="Add" />

@@ -9,7 +9,7 @@ const ManageEmployee = () => {
 
     // All employee data 
     useEffect(() => {
-        fetch('http://localhost:5000/employees')
+        fetch('https://mighty-escarpment-69704.herokuapp.com/employees')
             .then(res => res.json())
             .then(data => setEmployees(data));
     }, [isDeleted]);
@@ -18,7 +18,7 @@ const ManageEmployee = () => {
     const handleDeleteEmployee = id => {
         const proceed = window.confirm('Are you sure, you want to delete Employee Data?');
         if (proceed) {
-            const url = `http://localhost:5000/employee/${id}`;
+            const url = `https://mighty-escarpment-69704.herokuapp.com/employee/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

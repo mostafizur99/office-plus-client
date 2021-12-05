@@ -10,7 +10,7 @@ const UpdateEmployee = () => {
     let { updateId } = useParams();
 
     useEffect(() => {
-        const url = `http://localhost:5000/employee/${updateId}`;
+        const url = `https://mighty-escarpment-69704.herokuapp.com/employee/${updateId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => seEmployee(data));
@@ -29,7 +29,7 @@ const UpdateEmployee = () => {
     }
 
     const handleUpdateSubmit = e => {
-        const url = `http://localhost:5000/employee/${updateId}`;
+        const url = `https://mighty-escarpment-69704.herokuapp.com/employee/${updateId}`;
         fetch(url, {
             method: 'PUT',
             headers: {

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Alert, Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 import Employee from './Employee/Employee';
 import './Employees.css';
 
@@ -8,7 +8,7 @@ const Employees = () => {
     const [show, setShow] = useState(true);
 
     useEffect(() => {
-        fetch('http://localhost:5000/employees')
+        fetch('https://mighty-escarpment-69704.herokuapp.com/employees')
             .then(res => res.json())
             .then(data => setEmployees(data));
     }, []);
